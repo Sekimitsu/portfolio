@@ -1,15 +1,8 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ededed;
+  --foreground: #222;
   --font-montserrat: var(--font-montserrat);
   --font-noto-serif-jp: var(--font-noto-serif-jp);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #333;
-    --foreground: #ededed;
-  }
 }
 
 html,
@@ -18,8 +11,8 @@ body {
 }
 
 body {
-    color: var(--foreground);
-    background: var(--background);
+    color: #ededed;
+    background: #222;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-montserrat), var(--font-noto-serif-jp), sans-serif;
     -moz-osx-font-smoothing: grayscale;
@@ -38,10 +31,4 @@ a {
 
 ul {
     list-style: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
