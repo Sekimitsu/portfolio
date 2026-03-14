@@ -1,0 +1,132 @@
+.skills {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        row-gap: 40px;
+        &__group {
+            width: fit-content;
+            position: relative;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+            &__title {
+                font-size: 20px;
+                font-weight: 600;
+                text-align: left;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                background: #222;
+                padding: 0 20px;
+                transform: translate(-50%, -60%);
+            }
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                &__item {
+                    width: 100px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    p {
+                        text-align: center;
+                    }
+                    .content__group__item__icon {
+                        width: 80px;
+                        height: 80px;
+                        object-fit: contain;
+                        object-position: center;
+                        &.html {
+                            path {
+                                fill: #F06629;
+                            }
+                        }
+                        &.css {
+                            path {
+                                fill: #1D88C7;
+                            }
+                        }
+                        &.sass {
+                            path {
+                                fill: #CE659C;
+                            }
+                        }
+                        &.javascript {
+                            path {
+                                fill: yellow;
+                            }
+                        }
+                        &.typescript {
+                            path {
+                                fill: #1A7FCE;
+                            }
+                        }
+                        &.wordpress {
+                            path {
+                                fill: #177BA0;
+                            }
+                        }
+                        &.react {
+                            path {
+                                fill: #66DBFB;
+                            }
+                        }
+                        &.next {
+                            path {
+                                fill: #000;
+                            }
+                        }
+                        &.git {
+                            path {
+                                fill: #F1563B;
+                            }
+                        }
+                        &.github {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                        &.figma {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                        &.nodejs {
+                            path {
+                                fill: #2EA66B;
+                            }
+                        }
+                        &.studio {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                        &.three {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            &__group {
+                width: 100%;
+                &__list {
+                    justify-content: center;
+                    &__item {
+                        width: 85px;
+                    }
+                }
+            }
+        }
+    }
+}

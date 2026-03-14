@@ -1,0 +1,29 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background: linear-gradient(to left, #333 0%, #222 50% , #333 100%);
+    border-bottom: 1px solid #aaa;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding: 20px 0;
+        .header__link {
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .header__container {
+            gap: 30px;
+        }
+    }
+}

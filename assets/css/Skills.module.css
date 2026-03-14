@@ -1,0 +1,99 @@
+.skills .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  row-gap: 40px;
+}
+.skills .content__group {
+  width: fit-content;
+  position: relative;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.skills .content__group__title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #222;
+  padding: 0 20px;
+  transform: translate(-50%, -60%);
+}
+.skills .content__group__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills .content__group__list__item {
+  width: 100px;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .content__group__list__item p {
+  text-align: center;
+}
+.skills .content__group__list__item .content__group__item__icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+}
+.skills .content__group__list__item .content__group__item__icon.html path {
+  fill: #F06629;
+}
+.skills .content__group__list__item .content__group__item__icon.css path {
+  fill: #1D88C7;
+}
+.skills .content__group__list__item .content__group__item__icon.sass path {
+  fill: #CE659C;
+}
+.skills .content__group__list__item .content__group__item__icon.javascript path {
+  fill: yellow;
+}
+.skills .content__group__list__item .content__group__item__icon.typescript path {
+  fill: #1A7FCE;
+}
+.skills .content__group__list__item .content__group__item__icon.wordpress path {
+  fill: #177BA0;
+}
+.skills .content__group__list__item .content__group__item__icon.react path {
+  fill: #66DBFB;
+}
+.skills .content__group__list__item .content__group__item__icon.next path {
+  fill: #000;
+}
+.skills .content__group__list__item .content__group__item__icon.git path {
+  fill: #F1563B;
+}
+.skills .content__group__list__item .content__group__item__icon.github path {
+  fill: #fff;
+}
+.skills .content__group__list__item .content__group__item__icon.figma path {
+  fill: #fff;
+}
+.skills .content__group__list__item .content__group__item__icon.nodejs path {
+  fill: #2EA66B;
+}
+.skills .content__group__list__item .content__group__item__icon.studio path {
+  fill: #fff;
+}
+.skills .content__group__list__item .content__group__item__icon.three path {
+  fill: #fff;
+}
+@media (max-width: 768px) {
+  .skills .content__group {
+    width: 100%;
+  }
+  .skills .content__group__list {
+    justify-content: center;
+  }
+  .skills .content__group__list__item {
+    width: 85px;
+  }
+}
