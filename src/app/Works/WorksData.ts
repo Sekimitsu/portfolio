@@ -35,4 +35,11 @@ export const worksData: Work[] = [
         url: 'https://task-management-three-flax.vercel.app/',
         image: '/todo_app.png',
     },
+    {
+        type: 'Web Application',
+        title: 'Dashboard App',
+        skills: ['React.js', 'Next.js', 'TypeScript', 'SCSS', 'Figma', 'Vercel', 'Firebase'],
+        url: 'https://dashboard-one-tawny-43.vercel.app/login',
+        image: '/dashboard_app.png',
+    },
 ]
