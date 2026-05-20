@@ -28,7 +28,24 @@ function Mv() {
 
     return (
         <div className={styles.mv}>
-            <Image className={styles.bg__image} src="/bg.jpg" alt="bg" width={1000} height={1000} style={{ width: `${width}vw` , height: `${height}vh` , borderRadius: `${radius}vw` , opacity: opacity }} />
+            <div
+                className={styles.bg__wrap}
+                style={{
+                    width: `${width}dvw`,
+                    height: `${height}dvh`,
+                    borderRadius: `${radius}vw`,
+                    opacity,
+                }}
+            >
+                <Image
+                    className={styles.bg__image}
+                    src="/bg.jpg"
+                    alt=""
+                    fill
+                    sizes="100vw"
+                    priority
+                />
+            </div>
             <div className={styles.mv__container} style={{ opacity: opacity }}>
                 <h2 className={styles.mv__title}>
                     SEKIMITSU<br />

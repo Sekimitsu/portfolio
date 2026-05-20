@@ -1,17 +1,32 @@
 .mv {
+    /* 100vh はモバイルで UI（アドレスバー等）を含むため、実表示とズレやすい */
     height: calc(100vh + 500px);
-    width: 100vw;
+    height: calc(100dvh + 500px);
+    /* 100vw はモバイルで横スクロール／見切れの原因になりやすい */
+    width: 100%;
+    max-width: 100%;
     position: relative;
-    .bg__image {
+    overflow-x: hidden;
+    overflow-x: clip;
+
+    .bg__wrap {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100vw;
-        height: 100vh;
         z-index: -1;
-        filter: sepia(70%) saturate(50%) contrast(90%) brightness(50%);
+        pointer-events: none;
+        overflow: hidden;
+        width: 100vw;
+        width: 100dvw;
+        height: 100vh;
+        height: 100dvh;
+    }
+
+    .bg__image {
         object-fit: cover;
+        object-position: center;
+        filter: sepia(70%) saturate(50%) contrast(90%) brightness(50%);
     }
     &__container {
         display: flex;
@@ -52,6 +67,7 @@
 
     @media (max-width: 768px) {
         height: calc(100vh + 350px);
+        height: calc(100dvh + 350px);
     }
 }
 
