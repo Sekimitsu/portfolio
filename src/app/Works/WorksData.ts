@@ -42,4 +42,11 @@ export const worksData: Work[] = [
         url: 'https://dashboard-one-tawny-43.vercel.app/login',
         image: '/dashboard_app.png',
     },
+    {
+        type: 'Web Application',
+        title: 'Badminton App',
+        skills: ['React.js', 'TypeScript', 'Vercel'],
+        url: 'https://shuttle-match-three.vercel.app/',
+        image: '/badminton_app.png',
+    },
 ]
