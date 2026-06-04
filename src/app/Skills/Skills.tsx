@@ -6,7 +6,12 @@ function Skills() {
     return (
         <div className={`${styles.skills} ${common.section}`} id="skills">
             <div className={common.sec__container}>
-                <h2 className={common.sec__title}>SKILLS</h2>
+                <div className={common.sec__title}>
+                    <p className={common.sec__title__idx}>02</p>
+                    <h2 className={common.sec__title__text}>技術スタック</h2>
+                    <p className={common.sec__title__subtext}>主に使用している技術スタック。</p>
+                </div>
+                
                 <div className={`${styles.content} ${common.section__content}`}>
                     <div className={styles.content__group}>
                         <h3 className={styles.content__group__title}>Languages</h3>

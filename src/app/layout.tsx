@@ -1,18 +1,29 @@
-import type { Metadata } from "next";
-import { Montserrat, Noto_Serif_JP } from "next/font/google";
+
+import { Zen_Old_Mincho, Cormorant_Garamond, Zen_Kaku_Gothic_New, Space_Mono } from "next/font/google";
 import "./globals.css";
-export const montserrat = Montserrat({
+
+export const zenOldMincho = Zen_Old_Mincho({
     subsets: ["latin"],
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-    variable: "--font-montserrat",
+    weight: ["400", "500", "600", "700", "900"],
+    variable: "--font-zen-old-mincho",
+});
+export const cormorantGaramond = Cormorant_Garamond({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-cormorant-garamond",
 });
 
-export const notoSerifJP = Noto_Serif_JP({
+export const zenKakuGothicNew = Zen_Kaku_Gothic_New({
     subsets: ["latin"],
-    weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
-    variable: "--font-noto-serif-jp",
+    weight: ["400", "500", "700"],
+    variable: "--font-zen-kaku-gothic-new",
 });
 
+export const spaceMono = Space_Mono({
+    subsets: ["latin"],
+    weight: ["400", "700"],
+    variable: "--font-space-mono",
+});
 
 export default function RootLayout({
   children,
@@ -21,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${notoSerifJP.variable}`}>
+      <body className={`${zenOldMincho.variable} ${cormorantGaramond.variable} ${zenKakuGothicNew.variable} ${spaceMono.variable}`}>
         {children}
       </body>
     </html>

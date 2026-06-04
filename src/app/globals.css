@@ -1,8 +1,15 @@
 :root {
   --background: #ededed;
   --foreground: #222;
+  --accent: #E28C5F;
+  --gray: #9FA29F;
+
   --font-montserrat: var(--font-montserrat);
   --font-noto-serif-jp: var(--font-noto-serif-jp);
+  --serif-jp: "Zen Old Mincho", serif;
+  --serif-en: "Cormorant Garamond", "Zen Old Mincho", serif;
+  --sans: "Zen Kaku Gothic New", system-ui, sans-serif;
+  --mono: "Space Mono", ui-monospace, monospace;
 }
 
 html,
@@ -16,7 +23,7 @@ body {
     color: #ededed;
     background: #222;
     -webkit-font-smoothing: antialiased;
-    font-family: var(--font-montserrat), var(--font-noto-serif-jp), sans-serif;
+    font-family: var(--sans);
     -moz-osx-font-smoothing: grayscale;
 }
 

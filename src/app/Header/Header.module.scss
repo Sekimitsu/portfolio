@@ -5,19 +5,39 @@
     width: 100vw;
     z-index: 100;
     background: linear-gradient(to left, #333 0%, #222 50% , #333 100%);
-    border-bottom: 1px solid #aaa;
     &__container {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 100px;
-        padding: 20px 0;
-        .header__link {
-            font-size: 16px;
-            font-weight: 400;
+        padding: 20px max(20px, 4vw);
+        .header__title {
+            font-size: clamp(18px, 2vw, 20px);
+            font-weight: 600;
             color: #fff;
             text-decoration: none;
             cursor: pointer;
+        }
+        .header__links {
+            display: flex;
+            gap: 20px;
+            .header__link {
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .header__progress {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        .header__progress__bar {
+            height: 100%;
+            background: var(--accent);
+            transition: width 0.3s ease-in-out;
         }
     }
 

@@ -1,0 +1,40 @@
+.contact {
+    padding: clamp(80px, 8vw, 120px) 20px 200px;
+    .content {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        &__link {
+            font-size: clamp(20px, 1.8vw, 24px);
+            font-weight: 600;
+            color: #fff;
+            border-bottom: 1px solid var(--gray);
+            padding: 10px;
+            font-family: var(--serif-jp);
+            transition: all 0.3s ease;
+            @media (any-hover: hover) {
+                &:hover {
+                    color: var(--accent);
+                    border-color: var(--accent);
+                }
+            }
+        }
+        &__link__other {
+            font-size: clamp(20px, 1.8vw, 24px);
+            font-weight: 600;
+            color: #fff;
+            border-radius: 100px;
+            border: 1px solid var(--gray);
+            padding: 10px 20px;
+            font-family: var(--serif-jp);
+            transition: all 0.3s ease;
+        }
+        @media (any-hover: hover) {
+            &__link__other:hover {
+                color: var(--accent);
+                border-color: var(--accent);
+            }
+        }
+    }
+}
