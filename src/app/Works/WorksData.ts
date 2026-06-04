@@ -14,7 +14,7 @@ export const worksData: Work[] = [
         type: '2026 / E-Commerce',
         title: 'ハンドメイドアイテム販売<br />ECサイト',
         skills: ['Next.js', 'Shopify Storefront API', 'TypeScript', 'SCSS', 'Figma'],
-        url: 'https://aegis-service-system.com/',
+        url: 'https://choro-stitch.vercel.app/',
         image: ['/ec_image.png'],
         text: `
             個人開発としてハンドメイドアイテムを販売するECサイトを制作。
