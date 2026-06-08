@@ -1,5 +1,6 @@
 
 import { Zen_Old_Mincho, Cormorant_Garamond, Zen_Kaku_Gothic_New, Space_Mono } from "next/font/google";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const zenOldMincho = Zen_Old_Mincho({
